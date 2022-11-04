@@ -4,3 +4,10 @@
     -fx-background-size: 500px, 600px;
     -fx-background-position: right;
 }
+
+.login-dog{
+    -fx-background-image: url(images/login-dog.jpg);
+    -fx-background-position: center;
+    -fx-background-size: 500px, 590px;
+
+}
