@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="282.0" prefWidth="500.0" styleClass="background-dog" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wheremydog.MainController">
+   <children>
+      <Label layoutX="93.0" layoutY="46.0" text="나의 주인은 어디에?" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="99.0" layoutY="141.0" mnemonicParsing="false" text="유기동물 보러가기" />
+      <Button layoutX="224.0" layoutY="141.0" mnemonicParsing="false" text="로그인" />
+   </children>
+</AnchorPane>
