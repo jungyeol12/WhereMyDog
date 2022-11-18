@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wheremydog.DogParser">
+<AnchorPane prefHeight="689.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wheremydog.DogParser">
    <children>
-      <Button layoutX="273.0" layoutY="160.0" mnemonicParsing="false" onAction="#dogInformation" prefHeight="46.0" prefWidth="60.0" text="파싱" />
+      <Button layoutX="130.0" layoutY="14.0" mnemonicParsing="false" onAction="#dogInformation" prefHeight="46.0" prefWidth="60.0" text="파싱" />
+      <Pane layoutX="81.0" layoutY="123.0" prefHeight="188.0" prefWidth="294.0">
+         <children>
+            <ImageView fitHeight="118.0" fitWidth="117.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="147.0" layoutY="14.0" text="게시물 번호: " />
+            <Label layoutX="147.0" layoutY="41.0" text="게시글 등록일: " />
+            <Label layoutX="147.0" layoutY="66.0" text="공고일: " />
+            <Label layoutX="150.0" layoutY="117.0" text="특이사항: " />
+            <Label fx:id="animalSeq" layoutX="218.0" layoutY="14.0" text="Label" />
+            <Label fx:id="regDtTm" layoutX="233.0" layoutY="41.0" text="Label" />
+            <Label fx:id="noticeDate" layoutX="191.0" layoutY="66.0" text="Label" />
+            <Label fx:id="memo" layoutX="147.0" layoutY="140.0" text="Label" />
+            <Label fx:id="memo1" layoutX="153.0" layoutY="94.0" text="입양 상태: " />
+            <Label fx:id="adoptionStatusCd" layoutX="215.0" layoutY="94.0" text="Label" />
+         </children>
+      </Pane>
+      <Pane layoutX="424.0" layoutY="123.0" prefHeight="188.0" prefWidth="294.0" />
+      <Pane layoutX="75.0" layoutY="318.0" prefHeight="188.0" prefWidth="294.0" />
+      <Pane layoutX="424.0" layoutY="318.0" prefHeight="188.0" prefWidth="294.0" />
    </children>
 </AnchorPane>
