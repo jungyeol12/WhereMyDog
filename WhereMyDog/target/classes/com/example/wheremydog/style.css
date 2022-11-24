@@ -1,8 +1,7 @@
 .background-dog {
     -fx-background-image: url(images/poor-dog.jpg);
-    -fx-background-repeat: no-repeat;
-    -fx-background-size: 500px, 600px;
-    -fx-background-position: right;
+    -fx-background-size: 500px, 590px;
+    -fx-background-position: center;
 }
 
 .login-dog{
@@ -10,4 +9,15 @@
     -fx-background-position: center;
     -fx-background-size: 500px, 590px;
 
+}
+
+.pasing-dog{
+    -fx-background-image:url(images/pasing.jpg);
+    -fx-background-position: center;
+    -fx-background-size: 500px, 590px;
+}
+.pasing-btn{
+    -fx-background-image:url(images/pasing-button.jpg);
+    -fx-background-position: center;
+    -fx-background-size: 60px, 46px;
 }

@@ -6,10 +6,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane prefHeight="689.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wheremydog.DogParser">
+<AnchorPane prefHeight="590.0" prefWidth="500.0" styleClass="pasing-dog" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wheremydog.DogParser">
    <children>
-      <Button layoutX="130.0" layoutY="14.0" mnemonicParsing="false" onAction="#dogInformation" prefHeight="46.0" prefWidth="60.0" text="파싱" />
-      <Pane layoutX="81.0" layoutY="123.0" prefHeight="188.0" prefWidth="294.0">
+      <Button layoutX="155.0" layoutY="123.0" mnemonicParsing="false" onAction="#dogInformation" prefHeight="46.0" prefWidth="60.0" styleClass="pasing-btn" stylesheets="@style.css" />
+      <Pane layoutX="155.0" layoutY="169.0" prefHeight="188.0" prefWidth="294.0">
          <children>
             <ImageView fitHeight="118.0" fitWidth="117.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
             <Label layoutX="147.0" layoutY="14.0" text="게시물 번호: " />
@@ -22,9 +22,9 @@
             <Label fx:id="memo" layoutX="147.0" layoutY="140.0" text="Label" />
             <Label fx:id="memo1" layoutX="153.0" layoutY="94.0" text="입양 상태: " />
             <Label fx:id="adoptionStatusCd" layoutX="215.0" layoutY="94.0" text="Label" />
+            <Pane layoutX="-84.0" layoutY="5.0" prefHeight="188.0" prefWidth="294.0" />
          </children>
       </Pane>
-      <Pane layoutX="424.0" layoutY="123.0" prefHeight="188.0" prefWidth="294.0" />
       <Pane layoutX="75.0" layoutY="318.0" prefHeight="188.0" prefWidth="294.0" />
       <Pane layoutX="424.0" layoutY="318.0" prefHeight="188.0" prefWidth="294.0" />
    </children>
