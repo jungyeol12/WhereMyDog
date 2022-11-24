@@ -14,12 +14,17 @@
             <Font size="48.0" />
          </font>
       </Label>
-      <TextField layoutX="181.0" layoutY="215.0" prefHeight="23.0" prefWidth="168.0" />
-      <PasswordField layoutX="181.0" layoutY="277.0" prefHeight="23.0" prefWidth="168.0" />
-      <Button layoutX="290.0" layoutY="395.0" mnemonicParsing="false" text="회원가입" />
-      <Button layoutX="296.0" layoutY="317.0" mnemonicParsing="false" text="로그인" />
+      <TextField fx:id="txtUserName" layoutX="181.0" layoutY="215.0" onAction="#Login" prefHeight="23.0" prefWidth="168.0" />
+      <PasswordField fx:id="psdPassword" layoutX="181.0" layoutY="277.0" onAction="#Login" prefHeight="23.0" prefWidth="168.0" />
+      <Button fx:id="sign_upBtn" layoutX="290.0" layoutY="395.0" mnemonicParsing="false" onAction="#sign_up" text="회원가입" />
+      <Button layoutX="296.0" layoutY="317.0" mnemonicParsing="false" onAction="#Login" text="로그인" />
       <Label layoutX="193.0" layoutY="399.0" prefHeight="15.0" prefWidth="97.0" text="계정을 만드세요!" textFill="WHITE" />
       <Label layoutX="137.0" layoutY="219.0" text="아이디" textFill="WHITE" />
       <Label layoutX="125.0" layoutY="281.0" text="비밀번호" textFill="WHITE" />
+      <Label fx:id="lblStatus" layoutX="153.0" layoutY="147.0" prefHeight="50.0" prefWidth="224.0" text="status" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
