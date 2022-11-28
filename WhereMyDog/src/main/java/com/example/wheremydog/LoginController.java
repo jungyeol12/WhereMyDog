@@ -14,10 +14,9 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
-import java.text.NumberFormat;
 
 
-public class LoginContoller {
+public class LoginController {
 
     @FXML
     private Label lblStatus;
@@ -47,6 +46,7 @@ public class LoginContoller {
             lblStatus.setText("Login Failed");
         }
     }
+
     public void sign_up() {
         Stage mainStage = (Stage) sign_upBtn.getScene().getWindow();
 
@@ -56,17 +56,18 @@ public class LoginContoller {
 
         try {
             Parent nextScene
-                    =FXMLLoader.load(getClass().getResource("sign-up.fxml"));
+                    = FXMLLoader.load(getClass().getResource("sign-up.fxml"));
 
             Scene scene = new Scene(nextScene);
             sign.setScene(scene);
-            sign.setTitle("팝업 띄우기");
+            sign.setTitle("회원가입");
             sign.setResizable(false);
             sign.show();
 
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
 }

@@ -14,10 +14,10 @@
             <Font size="48.0" />
          </font>
       </Label>
-      <TextField layoutX="181.0" layoutY="215.0" prefHeight="23.0" prefWidth="168.0" />
-      <PasswordField layoutX="181.0" layoutY="258.0" prefHeight="23.0" prefWidth="168.0" />
-      <Button layoutX="422.0" layoutY="544.0" mnemonicParsing="false" text="돌아가기" />
-      <Button layoutX="296.0" layoutY="317.0" mnemonicParsing="false" text="회원가입" />
+      <TextField fx:id="id" layoutX="181.0" layoutY="215.0" onAction="#Sign_up" prefHeight="23.0" prefWidth="168.0" />
+      <PasswordField fx:id="urpassword" layoutX="181.0" layoutY="258.0" onAction="#Sign_up" prefHeight="23.0" prefWidth="168.0" />
+      <Button fx:id="BackBtn" layoutX="422.0" layoutY="544.0" mnemonicParsing="false" onAction="#Back" text="돌아가기" />
+      <Button layoutX="309.0" layoutY="318.0" mnemonicParsing="false" onAction="#Sign_up" text="회원가입" />
       <Label layoutX="122.0" layoutY="216.0" text="아이디" textFill="WHITE">
          <font>
             <Font size="18.0" />
@@ -26,10 +26,15 @@
          <font>
             <Font size="18.0" />
          </font></Label>
-      <TextField layoutX="181.0" layoutY="173.0" prefHeight="23.0" prefWidth="168.0" />
+      <TextField fx:id="Nickname" layoutX="181.0" layoutY="173.0" onAction="#Sign_up" prefHeight="23.0" prefWidth="168.0" />
       <Label layoutX="122.0" layoutY="174.0" text="닉네임" textFill="WHITE">
          <font>
             <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbStatus" layoutX="149.0" layoutY="120.0" onDragDetected="#Sign_up" prefHeight="50.0" prefWidth="224.0" text="status" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="24.0" />
          </font>
       </Label>
    </children>

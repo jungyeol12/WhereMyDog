@@ -16,12 +16,12 @@
             <Label layoutX="147.0" layoutY="41.0" text="게시글 등록일: " />
             <Label layoutX="147.0" layoutY="66.0" text="공고일: " />
             <Label layoutX="150.0" layoutY="117.0" text="특이사항: " />
-            <Label fx:id="animalSeq" layoutX="218.0" layoutY="14.0" text="Label" />
-            <Label fx:id="regDtTm" layoutX="233.0" layoutY="41.0" text="Label" />
-            <Label fx:id="noticeDate" layoutX="191.0" layoutY="66.0" text="Label" />
-            <Label fx:id="memo" layoutX="147.0" layoutY="140.0" text="Label" />
+            <Label fx:id="animalSeq" layoutX="218.0" layoutY="14.0" onDragDetected="#dogInformation" text="Label" />
+            <Label fx:id="regDtTm" layoutX="233.0" layoutY="41.0" onDragDetected="#dogInformation" text="Label" />
+            <Label fx:id="noticeDate" layoutX="191.0" layoutY="66.0" onDragDetected="#dogInformation" text="Label" />
+            <Label fx:id="memo" layoutX="147.0" layoutY="140.0" onDragDetected="#dogInformation" text="Label" />
             <Label fx:id="memo1" layoutX="153.0" layoutY="94.0" text="입양 상태: " />
-            <Label fx:id="adoptionStatusCd" layoutX="215.0" layoutY="94.0" text="Label" />
+            <Label fx:id="adoptionStatusCd" layoutX="215.0" layoutY="94.0" onDragDetected="#dogInformation" text="Label" />
             <Pane layoutX="-84.0" layoutY="5.0" prefHeight="188.0" prefWidth="294.0" />
          </children>
       </Pane>
