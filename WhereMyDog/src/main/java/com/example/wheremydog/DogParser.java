@@ -5,7 +5,14 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -93,4 +100,34 @@ public class DogParser {
             }	// for end
         }	// if end
     }
-}
+
+    @FXML
+    private Button sign_inBtn;
+    @FXML
+    private Stage A;
+
+
+    public void sign_in() {
+        Stage mainStage = (Stage) sign_inBtn.getScene().getWindow();
+
+            A = new Stage(StageStyle.DECORATED);
+            A.initModality(Modality.WINDOW_MODAL);
+            A.initOwner(mainStage);
+
+            try {
+                Parent nextScene
+                        = FXMLLoader.load(getClass().getResource("sign-in.fxml"));
+
+                Scene scene = new Scene(nextScene);
+                A.setScene(scene);
+                A.setTitle("로그인");
+                A.setResizable(false);
+                A.show();
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
+

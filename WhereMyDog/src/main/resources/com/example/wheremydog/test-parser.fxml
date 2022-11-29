@@ -27,5 +27,6 @@
       </Pane>
       <Pane layoutX="75.0" layoutY="318.0" prefHeight="188.0" prefWidth="294.0" />
       <Pane layoutX="424.0" layoutY="318.0" prefHeight="188.0" prefWidth="294.0" />
+      <Button fx:id="sign_inBtn" layoutX="222.0" layoutY="123.0" mnemonicParsing="false" onAction="#sign_in" text="로그인" />
    </children>
 </AnchorPane>
